@@ -2,6 +2,7 @@
 {
     static void Main()
     {
+        //Initialisation then Condition check then Incrementation.
         //1 to 10
         for (int i = 1; i <= 10; i++)
         {
@@ -22,6 +23,13 @@
         {
             System.Console.Write(j + " ");
         }
+        System.Console.WriteLine();
+
+        for (char c = 'A'; c != 'Z'; c++)
+        {
+            System.Console.Write(c + " ");
+        }
+        System.Console.WriteLine();
 
         System.Console.ReadKey();
     }
