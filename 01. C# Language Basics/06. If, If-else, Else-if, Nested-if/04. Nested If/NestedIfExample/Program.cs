@@ -3,8 +3,8 @@
     static void Main()
     {
         //declare variable to store marks of the student
-        int marks = 45;
-        char gradeLetter;
+        int marks = 75;
+        string gradeLetter;
 
         //>=85  O
         //>=60 && <85    A
@@ -16,27 +16,27 @@
         {
             if (marks >= 85)
             {
-                gradeLetter = 'O';
+                gradeLetter = "O";
             }
             else if (marks >= 60 && marks < 85)
             {
-                gradeLetter = 'A';
+                gradeLetter = "A";
             }
             else if (marks >= 50 && marks < 60)
             {
-                gradeLetter = 'B';
+                gradeLetter = "B";
             }
             else
             {
-                gradeLetter = 'C';
+                gradeLetter = "C";
             }
         }
         else
         {
-            gradeLetter = 'F';
+            gradeLetter = "F";
         }
 
-        System.Console.WriteLine(gradeLetter);
+        System.Console.WriteLine("Your grade is " + gradeLetter);
 
         System.Console.ReadKey();
     }
