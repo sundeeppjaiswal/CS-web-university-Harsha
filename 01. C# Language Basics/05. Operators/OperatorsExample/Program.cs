@@ -10,11 +10,13 @@
         decimal e = a * b; //Output: 30
         decimal f = a / b; //Output: 3.3333333
         decimal g = a % b; //Output: 1
-        System.Console.WriteLine(c);
-        System.Console.WriteLine(d);
-        System.Console.WriteLine(e);
-        System.Console.WriteLine(f);
-        System.Console.WriteLine(g);
+        System.Console.WriteLine("Initial assigned a = 10M");
+        System.Console.WriteLine("Initial assigned b = 3M");
+        System.Console.WriteLine("Add: " + c);
+        System.Console.WriteLine("Sub: " + d);
+        System.Console.WriteLine("Mul: " + e);
+        System.Console.WriteLine("Div: " + f);
+        System.Console.WriteLine("Mod: " + g);
 
         //Assignment Operators
         a += 20M;
@@ -33,10 +35,10 @@
         System.Console.WriteLine();
         System.Console.WriteLine(++a); //Output: 11
         System.Console.WriteLine(a++); //Output: 11
-        System.Console.WriteLine(a); //Output: 12
+        System.Console.WriteLine("Value of a: " + a); //Output: 12
         System.Console.WriteLine(--a); //Output: 11
         System.Console.WriteLine(a--); //Output: 11
-        System.Console.WriteLine(a); //Output: 10
+        System.Console.WriteLine("Value of a: " + a); //Output: 10
 
         //Comparison Operators
         System.Console.WriteLine();
@@ -70,14 +72,14 @@
         System.Console.WriteLine(b12); //Output: true
 
         //concatenation operator
-        string name = "Scott";
-        int age = 20;
+        string name = "Sundeep";
+        int age = 30;
         string message = "Hey " + name + ", your age is " + age + ".";
         System.Console.WriteLine(message);
 
         //ternary operator
         string title = (age < 13) ? "Child" : (age >= 13 && age <= 19) ? "Teenager" : "Adult";
-        System.Console.WriteLine(title);
+        System.Console.WriteLine("Ternary: " + title);
 
         //operator precedence
         double z = 10 + 4 * 30 / 10;
