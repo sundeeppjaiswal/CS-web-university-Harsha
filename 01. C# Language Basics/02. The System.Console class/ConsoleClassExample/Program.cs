@@ -20,5 +20,8 @@
 
         System.Console.WriteLine("Thank you.");
         System.Console.ReadKey();
+
+        // accepts the string value entered by user and return the same 
+        System.Console.ReadLine();
     }
 }
