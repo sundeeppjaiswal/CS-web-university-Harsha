@@ -13,15 +13,15 @@
         //initalize fields
         product1.productID = 1001;
         product1.productName = "Mobile";
-        product1.cost = 20000;
+        product1.cost = 120000;
         product1.quantityInStock = 1200;
         product2.productID = 1003;
         product2.productName = "Laptop";
-        product2.cost = 45000;
+        product2.cost = 445000;
         product2.quantityInStock = 3400;
         product3.productID = 1003;
         product3.productName = "Speakers";
-        product3.cost = 36000;
+        product3.cost = 336000;
         product3.quantityInStock = 800;
 
         //get values from fields
@@ -47,6 +47,23 @@
         System.Console.WriteLine("Total Quantity: " + totalQuantity);
 
         //TO DO: Findout the highest cost of all three products.
+        double highestProductCost = 0;
+        string productName = "XYZ";
+        if (product1.cost > product2.cost && product2.cost > product3.cost) 
+        {
+            highestProductCost = product1.cost;
+            productName = product1.productName;
+        } else if (product3.cost > product1.cost && product3.cost > product2.cost)
+        {
+            highestProductCost = product3.cost;
+            productName = product3.productName; 
+        }
+        else 
+        {
+            highestProductCost = product2.cost;
+            productName = product2.productName;
+        }
+        System.Console.WriteLine("Highest product is " + productName + " and the cost is " + highestProductCost);
         System.Console.ReadKey();
     }
 }
