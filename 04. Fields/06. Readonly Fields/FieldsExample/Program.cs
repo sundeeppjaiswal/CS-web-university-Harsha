@@ -1,4 +1,5 @@
-﻿class Sample
+﻿using System.Threading;
+class Sample
 { 
     static void Main()
     {
@@ -8,8 +9,10 @@
         //create objects
         product1 = new Product();
         Product.TotalNoProducts++; //1
+        Thread.Sleep(1000);
         product2 = new Product();
         Product.TotalNoProducts++; //2
+        Thread.Sleep(1000);
         product3 = new Product();
         Product.TotalNoProducts++; //3
 
