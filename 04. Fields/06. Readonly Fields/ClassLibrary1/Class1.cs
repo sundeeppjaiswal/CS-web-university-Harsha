@@ -1,4 +1,6 @@
-﻿public class Product
+﻿using System;
+
+public class Product
 {
     //fields
     public int productID;
@@ -7,12 +9,12 @@
     public int quantityInStock;
     public static int TotalNoProducts;
     public const string CategoryName = "Electronics";
-    public readonly string dateOfPurchase;
+    public readonly DateTime dateOfPurchase;
 
     //constructor
     public Product()
     {
-        dateOfPurchase = System.DateTime.Now.ToShortDateString();
+        dateOfPurchase = System.DateTime.Now.ToUniversalTime();
     }
 }
 
