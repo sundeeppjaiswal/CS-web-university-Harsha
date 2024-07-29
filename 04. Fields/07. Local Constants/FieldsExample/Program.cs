@@ -3,7 +3,7 @@
     static void Main()
     {
         //local constant
-        const string developerName = "harsha";
+        const string copyRight = "Sundeeppjaiswal";
 
         //create reference variables
         Product product1, product2, product3;
@@ -31,7 +31,7 @@
         product3.quantityInStock = 800;
 
         //get values from fields
-        System.Console.WriteLine(developerName);
+       
 
         System.Console.WriteLine("Product 1:");
         System.Console.WriteLine("Product ID: " + product1.productID);
@@ -58,7 +58,7 @@
         System.Console.WriteLine("Total Quantity: " + totalQuantity);
         System.Console.WriteLine("Total no. of products: " + Product.TotalNoProducts);  //Output: 3
         System.Console.WriteLine("Category of products: " + Product.CategoryName);  //Output: Electronics
-
+        System.Console.WriteLine("Copy rights: " + copyRight);
         //TO DO: Findout the highest cost of all three products.
         System.Console.ReadKey();
     }
