@@ -86,10 +86,11 @@
         tax = t;
     }
 
-    public void CalculateTax(double cost, double percentage)
+    public void CalculateTax(float cost, ref float percentage)
     {
         //create local variable
         double t;
+        percentage = cost * percentage;
 
         //calculate tax
         if (cost <= 50000)

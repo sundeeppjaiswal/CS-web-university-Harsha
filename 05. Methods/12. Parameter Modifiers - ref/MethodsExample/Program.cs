@@ -37,10 +37,11 @@
         //ref
         double p = 7.4;
         product2.CalculateTax(ref p);
-        System.Console.WriteLine("p is " + p);
+        System.Console.WriteLine("p is " + p + ", q is " + q);
 
-        product3.CalculateTax(10000, 3.4);
-
+        float a = 3.4f;
+        product3.CalculateTax(10000.025f, ref a);
+        System.Console.WriteLine("a is " + a);
         //get values from fields
         System.Console.WriteLine(developerName);
 

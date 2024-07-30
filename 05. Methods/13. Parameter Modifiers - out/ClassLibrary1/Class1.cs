@@ -69,7 +69,7 @@
     cost > 20000 then  tax = 12.5%*/
     public void CalculateTax(out double percentage)
     {
-        percentage = 10.45;
+        percentage = 10.4;
 
         //create local variable
         double t;
@@ -86,10 +86,11 @@
         tax = t;
     }
 
-    public void CalculateTax(double cost, double percentage)
+    public void CalculateTax(float cost, out float percentage)
     {
         //create local variable
-        double t;
+        float t;
+        percentage = 10.5f * 0.125f;
 
         //calculate tax
         if (cost <= 50000)
