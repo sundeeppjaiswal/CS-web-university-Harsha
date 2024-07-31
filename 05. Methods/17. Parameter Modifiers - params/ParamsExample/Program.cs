@@ -18,7 +18,11 @@ class Program
         Student s = new Student();
 
         //access DisplaySubjects method
-        s.DisplaySubjects("Theory of Computation", "Computer Networks", "Discrete Mathematics", "Digital System Design", "Basics of C");
+        s.DisplaySubjects("Theory of Computation", 
+            "Computer Networks", 
+            "Discrete Mathematics", 
+            "Digital System Design", 
+            "Basics of C", "Automata");
 
         System.Console.ReadKey();
     }
