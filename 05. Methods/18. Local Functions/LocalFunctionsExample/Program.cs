@@ -12,7 +12,7 @@
         //create local function
         double getAverageMarks()
         {
-            //create local variable of local function
+            //create local variable of local function | Code reusability is benefitted by local functions.
             double avg;
             avg = (double)(marks1 + marks2 + marks3) / 3;
             return avg;
