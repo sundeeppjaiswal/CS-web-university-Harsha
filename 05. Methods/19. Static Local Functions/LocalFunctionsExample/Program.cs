@@ -4,10 +4,13 @@
     public void DisplayMarks(int marks1, int marks2, int marks3)
     {
         double avgMarks = getAverageMarks(marks1, marks2, marks3);
+        float cgpa = getCGPA(avgMarks);
         System.Console.WriteLine("Marks 1: " + marks1);
         System.Console.WriteLine("Marks 2: " + marks2);
         System.Console.WriteLine("Marks 3: " + marks3);
         System.Console.WriteLine("Average marks: " + avgMarks);
+        System.Console.WriteLine("CGPA: " + cgpa);
+
 
         //create static local function
         static double getAverageMarks(int m1, int m2, int m3)
@@ -17,6 +20,11 @@
             avg = (double)(m1 + m2 + m3) / 3;
             return avg;
         }
+        static float getCGPA(double avg)
+        {
+            return (float)(avg / 10);
+        }
+
     }
 }
 
